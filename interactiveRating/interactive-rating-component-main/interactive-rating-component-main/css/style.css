@@ -1,0 +1,65 @@
+:root {
+  --dark-layer: #182137;
+  --dark-content: #232d48;
+  --orange: #fd7e14;
+}
+.container-fluid {
+  width: min(360px, 90%);
+  background-color: var(--dark-layer);
+  height: 340px;
+  font-family: "Overpass", sans-serif;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.topWord {
+  color: white;
+  font-family: Overpass;
+}
+.topWord p {
+  font-size: 13px;
+  color: lightgray;
+}
+.star-icon {
+  background-color: var(--dark-content);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+ul li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 100%;
+  color: lightgray;
+  background-color: var(--dark-content);
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li:hover {
+  background-color: var(--orange);
+  color: white;
+}
+.submit {
+  background-color: var(--orange);
+  width: 100%;
+  color: white;
+  font-weight: 1000;
+  font-size: 14px;
+}
+.submit:hover {
+  color: white;
+}
+.submit:active {
+  color: #fd7e14;
+  background-color: white;
+}
+.active {
+  color: white;
+  background-color: #adb5bd;
+}
+.inactive {
+  display: none;
+}

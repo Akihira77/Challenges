@@ -1,0 +1,10 @@
+.container-fluid {
+  height: 712px;
+}
+.left-side,
+.right-side {
+  width: 25%;
+}
+.mid-side {
+  width: 50%;
+}
