@@ -1,0 +1,36 @@
+.container {
+  background-color: #e7ebf9;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  width: 70vw;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card {
+  text-align: center;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+}
+.qr-code img {
+  margin-top: 5%;
+  border-radius: 10px;
+  width: 90%;
+  height: 300px;
+}
+.teks {
+  margin: auto;
+  width: 80%;
+}
+.body-teks {
+  font-size: 14px;
+}
+@media screen and (max-width: 40em) {
+  .container {
+    width: 95vw;
+  }
+}
