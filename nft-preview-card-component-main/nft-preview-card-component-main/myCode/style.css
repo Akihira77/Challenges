@@ -1,0 +1,128 @@
+:root {
+  --dark-content: #232d48;
+  --dark-layer: #182137;
+  --dark-blue-bg: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-color: var(--dark-blue-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.card {
+  width: min(340px, 88%);
+  background-color: var(--dark-blue-card);
+  min-height: 530px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.card-img {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+.card-img img {
+  width: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-text {
+  margin: 10px 18px;
+  font-size: 18px;
+}
+.brand-name a {
+  color: var(--white);
+  font-weight: 600;
+}
+.brand-description {
+  color: var(--soft-blue);
+  margin-top: 20px;
+}
+.brand-checkout {
+  display: flex;
+  margin-top: 20px;
+}
+.brand-price {
+  flex-grow: 1;
+  color: var(--cyan);
+}
+.brand-expired {
+  color: var(--soft-blue);
+}
+hr {
+  border: 0.3px solid var(--dark-blue-line);
+  width: 87%;
+  margin: auto;
+  opacity: 0.6;
+}
+footer {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 94%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+footer img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 22px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+footer span {
+  margin-left: 10px;
+  padding-top: 10px;
+  color: var(--soft-blue);
+}
+footer a {
+  padding-top: 10px;
+  padding-left: 5px;
+  color: var(--white);
+}
+.eye {
+  font-size: 30px;
+  position: absolute;
+  line-height: 315px;
+  background-color: hsla(178, 100%, 50%, 0.4);
+  width: 90%;
+  cursor: pointer;
+  left: 17px;
+  border-radius: 10px;
+  color: var(--white);
+  display: none;
+}
+.card-img:hover .eye {
+  display: block;
+}
+a:active {
+  color: var(--cyan);
+}
+@media screen and (max-width: 40em) {
+  .card {
+    min-height: 500px;
+  }
+  .brand-description,
+  .brand-name,
+  .brand-checkout {
+    font-size: 1rem;
+  }
+  .eye {
+    line-height: 290px;
+  }
+}
