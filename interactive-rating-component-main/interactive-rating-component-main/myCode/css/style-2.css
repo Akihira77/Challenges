@@ -1,0 +1,30 @@
+:root {
+  --dark-layer: #182137;
+  --dark-content: #232d48;
+  --orange: #fd7e14;
+}
+.container-fluid {
+  width: min(360px, 90%);
+  background-color: var(--dark-layer);
+  height: 380px;
+  font-family: "Overpass", sans-serif;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.selected {
+  background-color: var(--dark-content);
+  color: white;
+  padding: 0 15px;
+  line-height: 2.2;
+  font-size: 13px;
+  width: max-content;
+  color: orange;
+}
+.thanks h2 {
+  font-weight: 1000;
+  font-size: 33px;
+}
+.thanks p {
+  font-size: 14px;
+  color: lightgray;
+}
