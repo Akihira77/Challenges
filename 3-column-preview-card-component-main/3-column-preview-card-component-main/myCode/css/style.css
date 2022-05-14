@@ -85,6 +85,28 @@ a {
 .suvs .btn-learn {
   border: 2px solid var(--dark-cyan);
 }
+
+/* sedans saat aktif */
+.sedans .btn-learn:active {
+  background-color: var(--bright-orange);
+  border: 2px solid lightgray;
+}
+
+/* suvs saat aktif */
+.suvs .btn-learn:active {
+  background-color: var(--dark-cyan);
+  border: 2px solid lightgray;
+}
+
+/* luxury saat aktif */
+.luxury .btn-learn:active {
+  background-color: var(--very-dark-cyan);
+  border: 2px solid lightgray;
+}
+
+.btn-learn:active a {
+  color: lightgray;
+}
 @media screen and (max-width: 60em) {
   .description {
     font-size: 12px;
