@@ -1,0 +1,112 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 16%, 58%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-light-gray);
+  padding: 12vh 15vw 0;
+}
+h1 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 2px;
+}
+p {
+  color: lightgray;
+}
+.container {
+  display: flex;
+  min-height: 75vh;
+}
+.container > * {
+  padding: 5vh 3vw;
+  line-height: 30px;
+}
+.container > div {
+  flex-basis: 30%;
+}
+.description {
+  width: 90%;
+  font-family: "Lexend Deca", sans-serif;
+  height: 40vh;
+}
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+.btn-learn {
+  border-radius: 100px;
+  padding: 12px;
+  width: 130px;
+  box-shadow: 0px 0px 1px 0px var(--transparent-white);
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.sedans a {
+  color: var(--bright-orange);
+  text-shadow: 0px 0px 1px var(--bright-orange);
+}
+.sedans .btn-learn {
+  border: 2px solid var(--bright-orange);
+}
+.luxury a {
+  color: var(--very-dark-cyan);
+  text-shadow: 0px 0px 1px var(--very-dark-cyan);
+}
+.luxury .btn-learn {
+  border: 2px solid var(--very-dark-cyan);
+}
+.suvs a {
+  color: var(--dark-cyan);
+  text-shadow: 0px 0px 1px var(--dark-cyan);
+}
+.suvs .btn-learn {
+  border: 2px solid var(--dark-cyan);
+}
+@media screen and (max-width: 60em) {
+  .description {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 40em) {
+  body {
+    padding: 10vh 5vw;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container > * {
+    padding: 5vh 10vw;
+  }
+  .description {
+    height: 20vh;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+}
