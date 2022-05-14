@@ -1,0 +1,120 @@
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-1: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  padding: 20vh 10vw 0;
+}
+.container {
+  margin: 0 auto;
+  min-height: 60vh;
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  font-family: "Inter";
+  font-size: 15px;
+  border-radius: 10px;
+}
+.text {
+  padding: 10vh 5vw 0;
+}
+span {
+  color: var(--soft-violet);
+}
+.description {
+  color: var(--slightly-transparent-white);
+}
+.text h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.text > p {
+  width: 75%;
+  height: 100px;
+  line-height: 27px;
+}
+.credibility {
+  display: flex;
+  gap: 100px;
+  padding-top: 5vh;
+}
+.credibility header {
+  color: white;
+  padding-bottom: 5px;
+}
+.credibility p {
+  color: var(--slightly-transparent-white-1);
+  font-family: "Lexend Deca";
+}
+.img {
+  background-color: var(--soft-violet);
+  background-blend-mode: darken;
+  background-image: url("../images/image-header-desktop.jpg");
+  width: 1000px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 60em) {
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+  .img {
+    padding-bottom: 20vh;
+  }
+  .text {
+    margin-top: 2vh;
+    padding: 0 5vw;
+  }
+  .text > h1 {
+    padding-bottom: 10px;
+  }
+  .credibility {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 30em) {
+  body {
+    padding: 10% 5vw 0;
+  }
+  .container {
+    min-height: 90vh;
+  }
+  .img {
+    padding-bottom: 20vh;
+  }
+  .text {
+    margin-top: 2vh;
+    padding: 0 10vw;
+  }
+  .text > h1 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .text > p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .credibility {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .credibility h3 {
+    text-align: center;
+  }
+}
