@@ -55,12 +55,21 @@ p {
   border-radius: 0 10px 10px 0;
 }
 .btn-learn {
+  position: relative;
   border-radius: 100px;
-  padding: 12px;
+  /* padding: 12px; */
   width: 130px;
   box-shadow: 0px 0px 1px 0px var(--transparent-white);
+  z-index: 2;
+  height: 7vh;
 }
 a {
+  position: relative;
+  left: -20px;
+  top: -3px;
+  display: inline-block;
+  padding: 17px;
+  width: 120px;
   display: inline-block;
   text-decoration: none;
 }
