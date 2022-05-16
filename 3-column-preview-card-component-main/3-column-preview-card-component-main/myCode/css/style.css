@@ -19,10 +19,11 @@ body {
   background-color: var(--very-light-gray);
   padding: 12vh 15vw 0;
 }
-h1 {
+h2 {
   color: var(--very-light-gray);
   font-family: "Big Shoulders Display", cursive;
   letter-spacing: 2px;
+  font-size: 2rem;
 }
 p {
   color: lightgray;
@@ -63,7 +64,7 @@ p {
   z-index: 2;
   height: 7vh;
 }
-a {
+.container a {
   position: relative;
   left: -20px;
   top: -3px;
@@ -139,5 +140,8 @@ a {
   }
   .sedans {
     border-radius: 10px 10px 0 0;
+  }
+  h2 {
+    font-size: 1.7rem;
   }
 }
