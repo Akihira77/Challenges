@@ -53,7 +53,8 @@ body {
 }
 .bg-pattern > svg {
   position: relative;
-  left: -575px;
+  /* left: -575px; */
+  left: -37.6vw;
   top: -300px;
 }
 .box-woman-online {
