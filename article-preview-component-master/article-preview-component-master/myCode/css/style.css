@@ -9,6 +9,7 @@ html {
 }
 .container {
   position: relative;
+  font-family: "Manrope", sans-serif;
 }
 .text h1,
 .bio h2 {
