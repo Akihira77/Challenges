@@ -1,0 +1,82 @@
+:root {
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+body {
+  padding: 5vh 10vw;
+}
+.container {
+  font-family: "Poppins", sans-serif;
+}
+.supervisor,
+.teamBuilder,
+.karma,
+.calculator {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 350px;
+  height: 270px;
+  padding: 30px;
+}
+.supervisor h2,
+.teamBuilder h2,
+.karma h2,
+.calculator h2 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  font-size: 20px;
+}
+.supervisor p,
+.teamBuilder p,
+.karma p,
+.calculator p {
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  padding-top: 10px;
+}
+.one {
+  color: var(--Grayish-Blue);
+  font-size: 35px;
+}
+.two {
+  color: var(--Very-Dark-Blue);
+  font-size: 35px;
+  font-weight: 700;
+}
+header p {
+  color: var(--Grayish-Blue);
+}
+.supervisor {
+  border-top: 5px solid var(--Cyan);
+}
+.teamBuilder {
+  border-top: 5px solid var(--Red);
+}
+.karma {
+  border-top: 5px solid var(--Orange);
+}
+.calculator {
+  border-top: 5px solid var(--Blue);
+}
+@media screen and (max-width: 30em) {
+  body {
+    padding: 5vh 7vw;
+  }
+  .supervisor,
+  .teamBuilder,
+  .karma,
+  .calculator {
+    width: 100%;
+  }
+  .one {
+    font-size: 24px;
+  }
+  .two {
+    font-size: 25px;
+  }
+}
