@@ -1,0 +1,143 @@
+:root {
+  --Linear2: hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+  --Linear3: hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+.container {
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  min-width: 100%;
+}
+.text {
+  flex-basis: 60%;
+  position: relative;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-color: white;
+  background-size: cover;
+}
+.img {
+  flex-basis: 40%;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+}
+input {
+  width: 100%;
+  border: 1px solid var(--Desaturated-Red);
+}
+input::placeholder {
+  color: var(--Desaturated-Red);
+}
+.big {
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 90px;
+  color: var(--Desaturated-Red);
+}
+.big span {
+  color: var(--Dark-Grayish-Red);
+}
+.normal {
+  line-height: 30px;
+  color: var(--Desaturated-Red);
+}
+button {
+  background-image: linear-gradient(135deg, var(--Linear3));
+}
+.active {
+  background-image: linear-gradient(to right, var(--Linear2), var(--Linear3));
+}
+.arrow {
+  position: absolute;
+  width: 90px;
+  bottom: 0;
+  right: -2em;
+  /* visibility: hidden; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.arrow svg {
+  transform: scale(1.5);
+}
+.error {
+  color: var(--Soft-Red);
+}
+.login {
+  position: relative;
+}
+.tandaSeru {
+  position: absolute;
+  top: 36px;
+  right: 70px;
+}
+.logo {
+  position: absolute;
+  height: 100px;
+  top: 10px;
+  left: 160px;
+  z-index: 9;
+}
+@media screen and (max-width: 1280px) {
+  .text {
+    padding-left: 4rem;
+    padding-right: 8rem;
+  }
+  .logo {
+    left: 70px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    order: 1;
+    position: relative;
+  }
+  .img {
+    order: 2;
+    flex-basis: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+  }
+  .img img {
+    height: 600px;
+  }
+  .text {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 40em) {
+  .text {
+    padding: 30px 20px 30px 25px;
+  }
+  .big {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .normal {
+    font-size: 15px;
+    text-align: center;
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+  }
+  #email {
+    width: 90%;
+  }
+  .arrow {
+    right: 5px;
+    width: 70px;
+  }
+  .tandaSeru {
+    right: 85px;
+  }
+  .logo {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    left: 30px;
+  }
+}
