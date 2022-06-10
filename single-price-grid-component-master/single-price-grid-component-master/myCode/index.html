@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#e5eff5]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <!-- my own css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="pt-32">
+    <div class="container max-w-full font-karla shadow-xl w-[90%] laptop_8:w-[750px] mx-auto bg-white rounded-t-md flex flex-wrap flex-col laptop_8:flex-row">
+      <section class="join order-1 basis-full p-6 laptop_7:p-10">
+        <h1 class="text-[#2ab2af] font-bold text-2xl pb-4">Join our community</h1>
+        <p class="pb-2 text-[#c0df34] font-semibold">30-day, hassle-free money back guarantee</p>
+        <p class="text-[#98a6bd]">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+      </section>
+      <section class="subscription order-2 basis-1/2 bg-[#2ab2af] text-[#e5eff5] px-6 laptop_7:px-10 pt-6 laptop_7:pt-10 pb-6 laptop_8:pb-8 laptop_8:rounded-bl-md">
+        <h1 class="pb-2 laptop_8:pb-4 text-white font-bold">Monthly Subscription</h1>
+        <p class="price"><span class="text-4xl text-white pr-1 font-semibold">&dollar;29</span> per month</p>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button class="shadow-lg px-[90px] laptop_8:px-24 bg-[#c0df34] rounded-[5px] py-2 mt-5 laptop_8:mt-6 text-white mx-auto block">Sign Up</button>
+      </section>
+      <section class="why-us order-3 basis-1/2 text-[#e5eff5] p-6 laptop_7:p-10 rounded-br-md laptop_8:rounded-br-md">
+        <h1 class="text-white pb-4 font-bold">Why Us</h1>
+        <p>Tutorials by industry experts Peer &amp; expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week</p>
+      </section>
+    </div>
+    <footer>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Andika Wahyu Permadi</a>.</p>
+    </footer>
+  </body>
+</html>
