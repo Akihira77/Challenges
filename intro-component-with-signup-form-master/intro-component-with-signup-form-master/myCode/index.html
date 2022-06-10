@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- my own css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container max-w-full w-full h-[120vh] lg:h-[100vh] font-poppin px-4 py-8 laptop_8:px-16 laptop_8:py-16 lg:px-28 lg:py-20 flex items-center laptop_14:gap-x-10 laptop_16:gap-x-24 flex-col lg:flex-row">
+      <div class="intro text-white w-full lg:w-[1000px] pb-12 lg:pb-0 text-center lg:text-left">
+        <h2 class="font-semibold text-3xl md:text-5xl">Learn to code by watching others</h2>
+        <p class="pt-4 text-sm">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="bio w-full laptop_14:w-[1000px] md:px-10 laptop_7:px-15 laptop_8:px-10">
+        <div class="try-it w-full text-white text-center px-3 py-4 lg:p-4 rounded-md custom-box-shadow text-sm"><span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter</div>
+        <form action="" class="py-3 lg:py-5 px-6 lg:px-8 bg-white text-black h-[420px] rounded-lg mt-5 custom-box-shadow relative">
+          <!-- First Name -->
+          <input type="text" placeholder="First Name" class="w-full ring-1 py-3 pr-15 pl-6 mb-2 mt-4 rounded-[4px] focus:outline-slate-400" />
+          <div class="icon-error absolute right-13 -mt-11 hidden">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
+          <p class="-mt-5 hidden text-[#ff7a7a] text-right text-xs">First Name cannot be empty</p>
+
+          <!-- Last Name -->
+          <input type="text" placeholder="Last Name" class="w-full ring-1 py-3 pr-15 pl-6 my-2 rounded-[4px] focus:outline-slate-400" />
+          <div class="icon-error absolute right-13 -mt-11 hidden">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
+          <p class="-mt-5 hidden text-[#ff7a7a] text-right text-xs">Last Name cannot be empty</p>
+
+          <!-- Email -->
+          <input type="email" placeholder="Email Address" class="w-full ring-1 py-3 pr-15 pl-6 my-2 rounded-[4px] focus:outline-slate-400" />
+          <div class="icon-error absolute right-13 -mt-11 hidden">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
+          <p class="-mt-5 hidden text-[#ff7a7a] text-right text-xs">Looks like this is not an email</p>
+
+          <!-- Password -->
+          <input type="password" placeholder="Password" class="w-full ring-1 py-3 pr-5 pl-6 my-2 rounded-[4px] focus:outline-slate-400" maxlength="50" />
+          <div class="icon-error absolute right-13 -mt-11 hidden">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
+          <p class="-mt-5 hidden text-[#ff7a7a] text-right text-xs">Password cannot be empty</p>
+
+          <button class="w-full ring-1 p-3 my-2 rounded-[4px] text-white uppercase tracking-wider">claim your free trial</button>
+          <p class="text-xs block text-center mt-1 font-thin">By clicking the button, you are agreeing to our <a href="" class="">Terms and Services</a></p>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Andika Wahyu Permadi</a>.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

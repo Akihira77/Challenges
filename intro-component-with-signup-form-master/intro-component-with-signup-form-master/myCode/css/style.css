@@ -1,0 +1,29 @@
+:root {
+  --Red: rgb(255, 122, 122);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+.container {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: var(--Red);
+}
+.try-it {
+  background-color: var(--Blue);
+}
+.bio button {
+  background-color: var(--Green);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.bio a {
+  color: var(--Red);
+}
+.custom-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.ring-Red {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 122 122 / var(--tw-ring-opacity));
+}
