@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet" />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+
+    <!-- my own css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/4444330b0b.js" crossorigin="anonymous"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container font-libre_franklin text-center py-15">
+      <p class="font-bold pb-6 text-xl">PING<span class="text-[#4f7df3]">.</span></p>
+      <p class="text-[#969696] text-xl pb-2">We are launching <span class="font-bold text-black">soon!</span></p>
+      <p class="text-sm pb-7">Subscribe and get notified</p>
+
+      <form action="" class="md:flex flex-row">
+        <div class="sm:mr-2 sm:ml-auto">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="rounded-full ring-1 ring-[#ff5263] ring-[#c2d3ff] focus:outline-slate-400 py-[9px] px-5 w-64 placeholder:text-sm text-sm sm:w-[400px] sm:h-13"
+            placeholder="Your email address..."
+            onchange="validateEmail(this.value)"
+          />
+          <p class="error-txt invisible text-[10px] pt-2 text-[#ff5263] italic">Please provide a valid email address</p>
+        </div>
+        <button type="submit" class="notify bg-[#4f7df3] w-64 mx-auto -mt-3 py-[9px] px-5 rounded-full text-white font-semibold text-sm tracking-wide shadow-xl cursor-pointer sm:h-13 sm:ml-2 sm:-mt-0">Notify Me</button>
+      </form>
+      <div class="dashboard px-[30px] mt-13 sm:w-[75%] md:w-[60%] xl:w-[45%] mx-auto sm:mt-10">
+        <img src="images/illustration-dashboard.png" alt="image-dashboard" class="w-full h-[180px] sm:h-72" />
+      </div>
+
+      <footer class="mt-20 sm:mt-8">
+        <div class="icon flex justify-center gap-2 text-[#4f7df3] text-sm pb-4">
+          <a href="https://www.facebook.com"
+            ><div class="icon-img w-8 border-[1px] rounded-full p-1 border-[#c2d3ff]"><i class="fa-brands fa-facebook-f"></i></div
+          ></a>
+          <a href="https://www.twitter.com"
+            ><div class="icon-img w-8 border-[1px] rounded-full p-1 border-[#c2d3ff]"><i class="fa-brands fa-twitter"></i></div
+          ></a>
+          <a href="https://www.instagram.com"
+            ><div class="icon-img w-8 border-[1px] rounded-full p-1 border-[#c2d3ff]"><i class="fa-brands fa-instagram"></i></div
+          ></a>
+        </div>
+        <p class="text-[10px]">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+    <footer>
+      <p class="attribution py-2">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Andika Wahyu Permadi</a>.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
