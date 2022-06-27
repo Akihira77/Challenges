@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+}
+@layer components {
+  .grid-card {
+    @apply aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden hover:scale-95 transition-all duration-500;
+  }
+  .grid-card-img {
+    @apply w-full h-full bg-cover bg-center group-hover:scale-110 transition-all duration-500;
+  }
+  .icon-img {
+    @apply w-7 border-[1px] rounded-full p-[2px] border-[#c2d3ff] text-center text-[12px] sm:w-9 sm:p-1 sm:text-base;
+  }
+}
+@layer utilities {
+}

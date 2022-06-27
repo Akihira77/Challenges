@@ -1,0 +1,18 @@
+:root {
+  --Violet: #674baf;
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+.hero-image {
+  background-image: url("../images/bg-mobile.svg");
+}
+@media screen and (min-width: 768px) {
+  .hero-image {
+    background-image: none;
+  }
+  .container {
+    background-image: url("../images/bg-desktop.svg");
+  }
+  .text button {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}
