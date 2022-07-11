@@ -1,0 +1,14 @@
+:root {
+  --Soft-red: #ec775f;
+  --Cyan: #76b5bc;
+  --Dark-brown: #382314;
+  --Medium-brown: #93867b;
+  --Cream: #f8e9dd;
+  --Very-pale-orange: #fffaf5;
+}
+.graf::before {
+  content: attr(data-before);
+}
+.graf.active::before {
+  display: block;
+}
