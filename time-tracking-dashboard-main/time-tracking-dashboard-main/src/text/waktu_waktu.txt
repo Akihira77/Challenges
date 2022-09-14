@@ -1,0 +1,140 @@
+
+
+
+
+
+
+
+
+
+
+work
+            <div class="daily flex pt-2 pb-7">
+              <div class="now text-4xl">5hrs</div>
+              <!-- daily -->
+              <div class="previous ml-auto self-center">Previous - 7hrs</div>
+              <!-- daily -->
+            </div>
+            <div class="weekly hidden">
+              32hrs
+              <!-- weekly -->
+              Previous - 36hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              103hrs
+              <!-- monthly -->
+              Previous - 128hrs
+              <!-- monthly -->
+            </div>
+
+play
+            <div class="daily">
+              Play 1hr
+              <!-- daily -->
+              Previous - 2hrs
+              <!-- daily -->
+            </div>
+
+            <div class="weekly hidden">
+              10hrs
+              <!-- weekly -->
+              Previous - 8hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              23hrs
+              <!-- monthly -->
+              Previous - 29hrs
+              <!-- monthly -->
+            </div>
+
+study
+            <div class="daily">
+              Study 0hrs
+              <!-- daily -->
+              Previous - 1hr
+              <!-- daily -->
+            </div>
+
+            <div class="weekly hidden">
+              4hrs
+              <!-- weekly -->
+              Previous - 7hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              13hrs
+              <!-- monthly -->
+              Previous - 19hrs
+              <!-- monthly -->
+            </div>
+
+exercise
+            <div class="daily">
+              Exercise 1hr
+              <!-- daily -->
+              Previous - 1hr
+              <!-- daily -->
+            </div>
+
+            <div class="weekly hidden">
+              4hrs
+              <!-- weekly -->
+              Previous - 5hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              11hrs
+              <!-- monthly -->
+              Previous - 18hrs
+              <!-- monthly -->
+            </div>
+
+social
+            <div class="daily">
+              Social 1hr
+              <!-- daily -->
+              Previous - 3hrs
+              <!-- daily -->
+            </div>
+
+            <div class="weekly hidden">
+              5hrs
+              <!-- weekly -->
+              Previous - 10hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              21hrs
+              <!-- monthly -->
+              Previous - 23hrs
+              <!-- monthly -->
+            </div>
+
+self-care
+            <div class="daily">
+              Social 1hr
+              <!-- daily -->
+              Previous - 3hrs
+              <!-- daily -->
+            </div>
+
+            <div class="weekly hidden">
+              5hrs
+              <!-- weekly -->
+              Previous - 10hrs
+              <!-- weekly -->
+            </div>
+
+            <div class="monthly hidden">
+              21hrs
+              <!-- monthly -->
+              Previous - 23hrs
+              <!-- monthly -->
+            </div>

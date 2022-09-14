@@ -1,0 +1,33 @@
+:root {
+  --Blue: #5847eb;
+
+  --Light-red-work: #ff8c66;
+  --Soft-blue-play: #56c2e6;
+  --Light-red-study: #ff5c7c;
+  --Lime-green-exercise: #4acf81;
+  --Violet-social: #7536d3;
+  --Soft-orange-self-care: #f1c65b;
+
+  --Very-dark-blue: #0f1424;
+  --Dark-blue: #1c1f4a;
+  --Desaturated-blue: #6f76c8;
+  --Pale-Blue: #bdc1ff;
+}
+.work > div:first-child {
+  background-color: var(--Light-red-work);
+}
+.play > div:first-child {
+  background-color: var(--Soft-blue-play);
+}
+.study > div:first-child {
+  background-color: var(--Light-red-study);
+}
+.exercise > div:first-child {
+  background-color: var(--Lime-green-exercise);
+}
+.social > div:first-child {
+  background-color: var(--Violet-social);
+}
+.self-care > div:first-child {
+  background-color: var(--Soft-orange-self-care);
+}
